@@ -5,7 +5,7 @@ function push_origin {
 
 for DIR in support testbench memory facile asset auth extension foundation html resources view widget
 do
-	cd ../;
+    cd ../;
     cd $DIR;
     echo '-------';
     pwd;
