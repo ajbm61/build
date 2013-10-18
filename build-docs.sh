@@ -4,9 +4,9 @@ BRANCH=$1;
 function build_docs {
     echo "git checkout $BRANCH";
     git checkout $BRANCH;
-    rm -Rf ../docs/$BRANCH/components/$DIR/*;
+    rm -Rf ../docs/$TARGET/components/$DIR/*;
     cp -r docs/* ../docs/$TARGET/components/$DIR/;
-    mv ../docs/$BRANCH/components/$DIR/readme.md ../docs/$TARGET/components/$DIR/index.md;
+    mv ../docs/$TARGET/components/$DIR/readme.md ../docs/$TARGET/components/$DIR/index.md;
 }
 
 for DIR in asset auth extension facile foundation html memory model resources support translation testbench view widget
