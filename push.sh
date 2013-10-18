@@ -3,7 +3,7 @@ function push_origin {
     git push --tags origin master:master 2.0:2.0;
 }
 
-for DIR in testbench support memory facile asset auth extension html resources view widget foundation
+for DIR in testbench translation support memory model facile asset auth extension html resources view widget foundation
 do
     cd ../;
     cd $DIR;

@@ -8,7 +8,7 @@ function tag_branch {
     git tag $TAG;
 }
 
-for DIR in asset auth extension facile foundation html memory resources support testbench view widget
+for DIR in asset auth extension facile foundation html memory model resources support testbench translation view widget
 do
     cd ../;
     cd $DIR;
