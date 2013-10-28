@@ -5,7 +5,7 @@ function revert_tag {
     git tag -d $TAG;
 }
 
-for DIR in asset auth extension facile foundation html memory model resources support testbench translation view widget
+for DIR in asset auth debug extension facile foundation html memory model optimize resources support testbench translation view widget
 do
     cd ../;
     cd $DIR;
