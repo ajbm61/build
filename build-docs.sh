@@ -11,6 +11,7 @@ function build_platform {
     cp -r docs/* ../docs/$TARGET/;
     mv ../docs/$TARGET/readme.md ../docs/$TARGET/index.md;
     mkdir ../docs/$TARGET/components;
+    echo "Documentation copied";
 }
 
 function build_docs {
@@ -19,6 +20,7 @@ function build_docs {
     mkdir ../docs/$TARGET/components/$DIR;
     cp -r docs/* ../docs/$TARGET/components/$DIR/;
     mv ../docs/$TARGET/components/$DIR/readme.md ../docs/$TARGET/components/$DIR/index.md;
+    echo "Documentation copied";
 }
 
 build_platform;
