@@ -25,7 +25,7 @@ function build_docs {
 
 build_platform;
 
-for DIR in asset auth debug extension facile foundation html memory model optimize resources support testbench view widget
+for DIR in asset auth debug extension facile foundation html memory model optimize resources support translation testbench view widget
 do
     cd ../;
     cd $DIR;
