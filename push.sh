@@ -1,6 +1,8 @@
+BRANCH=2.0;
+
 function push_origin {
-    echo "git push origin --tags";
-    git push --tags origin master:master 2.0:2.0;
+    echo "git push origin --tags $BRANCH:$BRANCH";
+    git push --tags origin $BRANCH:$BRANCH;
 }
 
 for DIR in imagine translation testbench support debug memory model facile asset auth extension html resources view widget optimize foundation platform

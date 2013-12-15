@@ -1,11 +1,11 @@
-FROM_BRANCH=$1;
-TO_BRANCH=$2;
+BRANCH=2.0;
+DESTINATION=$1;
 
 function merge_to {
-    echo "git checkout $TO_BRANCH";
-    git checkout $TO_BRANCH;
-    echo "git merge $FROM_BRANCH";
-    git merge $FROM_BRANCH;
+    echo "git checkout $DESTINATION";
+    git checkout $DESTINATION;
+    echo "git merge $BRANCH";
+    git merge $BRANCH;
 }
 
 for DIR in asset auth debug extension facile foundation html imagine memory model optimize resources support translation testbench view widget platform

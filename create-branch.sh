@@ -1,8 +1,9 @@
+BRANCH=2.0;
 CREATE=$1;
 
 function create_branch {
-    echo "git checkout master";
-    git checkout master;
+    echo "git checkout $BRANCH";
+    git checkout $BRANCH;
     echo "git checkout -b $CREATE";
     git checkout -b $CREATE;
 }

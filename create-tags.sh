@@ -1,5 +1,5 @@
+BRANCH=2.0;
 TAG=$1;
-BRANCH=$2;
 
 function tag_branch {
     echo "git checkout $BRANCH";
