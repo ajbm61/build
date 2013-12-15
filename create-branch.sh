@@ -1,4 +1,4 @@
-BRANCH=2.0;
+BRANCH=2.1;
 CREATE=$1;
 
 function create_branch {

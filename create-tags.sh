@@ -1,4 +1,4 @@
-BRANCH=2.0;
+BRANCH=2.1;
 TAG=$1;
 
 function tag_branch {
