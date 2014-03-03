@@ -5,7 +5,7 @@ function push_origin {
     git push --tags origin $BRANCH:$BRANCH;
 }
 
-for DIR in imagine translation testbench support debug memory model facile asset auth extension html resources view warden widget optimize foundation platform
+for DIR in imagine translation testbench support debug memory model facile asset auth extension html notifier resources view warden widget optimize foundation platform
 do
     cd ../;
     cd $DIR;
