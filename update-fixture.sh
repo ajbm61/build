@@ -1,4 +1,4 @@
-BRANCH=3.0;
+BRANCH=master;
 
 cd ../platform
 git checkout $BRANCH;

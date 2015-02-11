@@ -1,4 +1,4 @@
-BRANCH=3.0;
+BRANCH=master;
 
 function checkout {
     echo "git checkout $BRANCH";

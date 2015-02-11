@@ -1,4 +1,4 @@
-BRANCH=3.0;
+BRANCH=master;
 
 function push_origin {
     echo "git push origin --tags $BRANCH:$BRANCH";

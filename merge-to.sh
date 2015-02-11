@@ -1,4 +1,4 @@
-BRANCH=3.0;
+BRANCH=master;
 DESTINATION=$1;
 
 function merge_to {
