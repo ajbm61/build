@@ -1,11 +1,13 @@
-BRANCH=master;
+BRANCH=3.0;
 
 function push_origin {
     echo "git push origin --tags $BRANCH:$BRANCH";
     git push --tags origin $BRANCH:$BRANCH;
 }
 
-for DIR in imagine translation testbench support debug memory model facile asset auth extension html notifier resources view warden widget optimize foundation platform
+declare -a COMPONENTS=("asset" "auth" "avatar" "debug" "extension" "facile" "foundation" "html" "imagine" "installer" "kernel" "memory" "messages" "model" "notifier" "optimize" "resources" "support" "testbench" "testing" "tenanti" "translation" "view" "widget" "control" "story")
+
+for DIR in "${COMPONENTS[@]}"
 do
     cd ../;
     cd $DIR;
