@@ -1,4 +1,6 @@
-BRANCH=master;
+#!/bin/bash
+
+source config.conf;
 
 cd ../platform
 git checkout $BRANCH;

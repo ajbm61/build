@@ -1,4 +1,6 @@
-BRANCH=master;
+#!/bin/bash
+
+source config.conf;
 TAG=$1;
 
 function tag_branch {
@@ -7,8 +9,6 @@ function tag_branch {
     echo "git tag $TAG";
     git tag $TAG;
 }
-
-declare -a COMPONENTS=("asset" "auth" "avatar" "debug" "extension" "facile" "foundation" "html" "imagine" "installer" "kernel" "memory" "messages" "model" "notifier" "optimize" "resources" "support" "testbench" "testing" "tenanti" "translation" "view" "widget" "control" "story")
 
 for DIR in "${COMPONENTS[@]}"
 do
