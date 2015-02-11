@@ -1,4 +1,6 @@
-BRANCH=3.0;
+#!/bin/bash
+
+source config.conf;
 
 cd ../platform
 git checkout $BRANCH;
