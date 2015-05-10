@@ -13,8 +13,8 @@ return Symfony\CS\Config\Config::create()
     ->level(Symfony\CS\FixerInterface::PSR2_LEVEL)
     ->fixers([
         '-psr0',
-        'align_double_arrow',
-        'align_equals',
+        '-align_double_arrow',
+        '-align_equals',
         'concat_without_spaces',
         'double_arrow_multiline_whitespaces',
         'duplicate_semicolon',
