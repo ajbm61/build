@@ -6,6 +6,7 @@ $finder = Symfony\Component\Finder\Finder::create()
     ->in(__DIR__.'/../platform/resources/config')
     ->in(__DIR__.'/../platform/resources/database')
     ->in(__DIR__.'/../platform/resources/lang')
+    ->in(__DIR__.'/../studio/stubs')
     ->ignoreDotFiles(true)
     ->ignoreVCS(true);
 
@@ -15,6 +16,7 @@ return Symfony\CS\Config\Config::create()
         '-psr0',
         '-align_double_arrow',
         '-align_equals',
+        'blankline_after_open_tag',
         'concat_without_spaces',
         'double_arrow_multiline_whitespaces',
         'duplicate_semicolon',
@@ -26,7 +28,6 @@ return Symfony\CS\Config\Config::create()
         'multiline_spaces_before_semicolon',
         'new_with_braces',
         'no_blank_lines_after_class_opening',
-        'no_blank_lines_before_namespace',
         'no_empty_lines_after_phpdocs',
         'object_operator',
         'operators_spaces',
@@ -47,6 +48,7 @@ return Symfony\CS\Config\Config::create()
         'remove_leading_slash_use',
         'remove_lines_between_uses',
         'short_array_syntax',
+        'single_blank_line_before_namespace',
         'single_quote',
         'spaces_cast',
         'standardize_not_equal',
